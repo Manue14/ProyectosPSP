@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PSP.iml" filepath="$PROJECT_DIR$/.idea/PSP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo1/ejemplo1.iml" filepath="$PROJECT_DIR$/ejemplo1/ejemplo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo2/ejemplo2.iml" filepath="$PROJECT_DIR$/ejemplo2/ejemplo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo2error/ejemplo2error.iml" filepath="$PROJECT_DIR$/ejemplo2error/ejemplo2error.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo6/ejemplo6.iml" filepath="$PROJECT_DIR$/ejemplo6/ejemplo6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo7/ejemplo7.iml" filepath="$PROJECT_DIR$/ejemplo7/ejemplo7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo8/ejemplo8.iml" filepath="$PROJECT_DIR$/ejemplo8/ejemplo8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ejemplo8_2/ejemplo8_2.iml" filepath="$PROJECT_DIR$/ejemplo8_2/ejemplo8_2.iml" />
+    </modules>
+  </component>
+</project>

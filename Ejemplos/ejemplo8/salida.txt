@@ -1,0 +1,27 @@
+Microsoft Windows [Versi¢n 10.0.22631.3296]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\mercedes\Desktop\ejemplo8>MKDIR NUEVO
+
+C:\Users\mercedes\Desktop\ejemplo8>CD NUEVO
+
+C:\Users\mercedes\Desktop\ejemplo8\NUEVO>ECHO CREO UN FICHERO EN CARPETA NUEVA > Mifichero.txt
+
+C:\Users\mercedes\Desktop\ejemplo8\NUEVO>DIR
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 6019-6601
+
+ Directorio de C:\Users\mercedes\Desktop\ejemplo8\NUEVO
+
+27/09/2024  11:15    <DIR>          .
+27/09/2024  11:15    <DIR>          ..
+27/09/2024  11:15                35 Mifichero.txt
+               1 archivos             35 bytes
+               2 dirs  20.049.616.896 bytes libres
+
+C:\Users\mercedes\Desktop\ejemplo8\NUEVO>DIRR
+
+C:\Users\mercedes\Desktop\ejemplo8\NUEVO>ECHO FIN COMANDOS 
+FIN COMANDOS 
+
+C:\Users\mercedes\Desktop\ejemplo8\NUEVO>

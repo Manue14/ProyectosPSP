@@ -1,0 +1,17 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 6019-6601
+
+ Directorio de C:\Users\mercedes\Desktop\ejemplo7
+
+27/09/2024  11:13    <DIR>          .
+25/09/2024  09:48    <DIR>          ..
+11/10/2021  00:00    <DIR>          build
+27/09/2024  11:13             3.609 build.xml
+27/09/2024  11:13                 0 error.txt
+10/10/2021  23:53                85 manifest.mf
+10/10/2021  23:53    <DIR>          nbproject
+27/09/2024  11:13                 0 salida.txt
+10/10/2021  23:53    <DIR>          src
+11/10/2021  00:02    <DIR>          test
+               4 archivos          3.694 bytes
+               6 dirs  20.050.436.096 bytes libres

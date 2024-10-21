@@ -1,0 +1,20 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 6019-6601
+
+ Directorio de C:\Users\a21manuelag.TEIS\Desktop\Ejercicios_PSP
+
+09/10/2024  08:43    <DIR>          .
+08/10/2024  14:27    <DIR>          ..
+09/10/2024  08:43    <DIR>          .idea
+04/10/2024  10:16    <DIR>          ejemplo1
+04/10/2024  10:16    <DIR>          ejemplo2
+04/10/2024  10:16    <DIR>          ejemplo2error
+04/10/2024  10:16    <DIR>          ejemplo6
+04/10/2024  10:16    <DIR>          ejemplo7
+04/10/2024  10:16    <DIR>          ejemplo8
+04/10/2024  10:16    <DIR>          ejemplo8_2
+09/10/2024  08:43                 0 error.txt
+04/10/2024  10:16    <DIR>          out
+09/10/2024  08:43                 0 salida.txt
+               2 archivos              0 bytes
+              11 dirs  97.983.930.368 bytes libres
