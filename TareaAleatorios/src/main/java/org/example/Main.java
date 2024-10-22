@@ -44,6 +44,15 @@ public class Main {
 
                 //Construimos un buffer de lectura a partir del InputStream de hijo2
                 BufferedReader reader2 = new BufferedReader(new InputStreamReader(hijo2.getInputStream()));
+                
+                System.out.println("Vas a tener que intrducir " + n + " cadenas. Si prefieres introducir otra cantidad"
+                        + " introduzca el número ahora, sino introduzca cualquier otro valor que no sea un entero: ");
+                String helper = scanner.readLine(); //Le pedimos al usuario otro número de cadenas a introducir si lo prefiere
+                
+                if (checkIfInteger(helper)) {
+                    n = Integer.parseInt(helper);   //Si el usuario introdujo un número válido sustituimos el valor de n por el valor introducido
+                }
+                
                 System.out.println("Introduce " + n + " cadenas (si quieres acabar antes introduce ff):");
 
                 int i = 0;
@@ -82,6 +91,15 @@ public class Main {
             fileWriter.close();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
+        }
+    }
+    
+    public static boolean checkIfInteger(String n) {
+        try {
+            Integer.parseInt(n);
+            return true;
+        } catch (NumberFormatException ex) {
+            return false;
         }
     }
 }
