@@ -18,7 +18,7 @@ public class TestPrioridad {
     public static void main(String[] args) {
         if (args != null) {
             try {
-                int n = Integer.parseInt(args[0]);
+                int n = 40;
                 if(n<=0 ){
                     n=6;
                 }

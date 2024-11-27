@@ -18,7 +18,7 @@ public class Cuentas extends Thread {
 
     public Cuentas(int n) {
         nCuentas = n; // número o cantidad de hilos Contador que se van a lanzar
-//        setPriority((nCuentas + 2) % Thread.MAX_PRIORITY);
+        setPriority((nCuentas + 2) % Thread.MAX_PRIORITY);
         // establecemos la prioridad de este hilo
         cuenta = new Contador[nCuentas]; // arrray de nCuentas elementos Contador
       /*recorremos el array cuenta y  en cada elemento del mismo referenciamos 

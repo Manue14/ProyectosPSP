@@ -63,7 +63,7 @@ public class Cuentas extends Thread{
            // siguen su ejecución.
            try
            {
-               int nMilisegundos=(int)(10*Math.pow(2,nCuentas));
+               int nMilisegundos=1000;
                sleep(nMilisegundos);
            }catch(InterruptedException e){};       
             
