@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EJERCICIO2. SOCKETS STREAM.iml" filepath="$PROJECT_DIR$/.idea/EJERCICIO2. SOCKETS STREAM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJERCICIO2_CLIENTE/EJERCICIO2_CLIENTE.iml" filepath="$PROJECT_DIR$/EJERCICIO2_CLIENTE/EJERCICIO2_CLIENTE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EJERCICIO2_SERVIDOR/EJERCICIO2_SERVIDOR.iml" filepath="$PROJECT_DIR$/EJERCICIO2_SERVIDOR/EJERCICIO2_SERVIDOR.iml" />
+    </modules>
+  </component>
+</project>
