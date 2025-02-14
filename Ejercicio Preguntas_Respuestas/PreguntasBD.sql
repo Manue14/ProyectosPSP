@@ -98,13 +98,20 @@ CREATE PROCEDURE insert_pregunta_respuesta(IN pregunta VARCHAR(255), IN respuest
 		END IF;
         
         INSERT INTO preguntas_respuestas (id_pregunta, id_respuesta) VALUES (last_pregunta_id, last_respuesta_id);
-        
+        #Capturar excepción
         SET @using_insert_procedure = FALSE;
     END $$
         
 DELIMITER ;
 
 CALL insert_pregunta_respuesta("¿Mercedes me vas a aprobar?", "No te voy a aprobar");
-CALL insert_pregunta_respuesta("¿Cómo te llamas?", "Manuel");
 CALL insert_pregunta_respuesta("¿Cómo te llamas?", "Manu");
+CALL insert_pregunta_respuesta("¿Cúal es tu nombre?", "Manu");
 CALL insert_pregunta_respuesta("¿Cúal es tu color favorito?", "Azul");
+
+SELECT * FROM preguntas;
+SELECT * FROM respuestas;
+SELECT * FROM preguntas_respuestas;
+
+SET SQL_SAFE_UPDATES=0;
+DELETE FROM preguntas WHERE cadena = "¿Cómo te llamas?";
