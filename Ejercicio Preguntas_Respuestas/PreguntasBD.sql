@@ -3,25 +3,29 @@ CREATE DATABASE PreguntasBD;
 USE PreguntasBD;
 
 CREATE TABLE preguntas(
-	id INT PRIMARY KEY AUTO_INCREMENT,
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     cadena VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE respuestas(
-	id INT PRIMARY KEY AUTO_INCREMENT,
+	id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
     cadena VARCHAR(255) UNIQUE NOT NULL
 );
 
 CREATE TABLE preguntas_respuestas(
-	id_pregunta INT NOT NULL,
-    id_respuesta INT NOT NULL,
+	id_pregunta INT UNSIGNED NOT NULL,
+    id_respuesta INT UNSIGNED NOT NULL,
     CONSTRAINT PK_p_r PRIMARY KEY (id_pregunta, id_respuesta),
-    FOREIGN KEY (id_pregunta) REFERENCES preguntas(id) ON DELETE CASCADE,
-    FOREIGN KEY (id_respuesta) REFERENCES respuestas(id) ON DELETE CASCADE
+    FOREIGN KEY (id_pregunta) REFERENCES preguntas(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    INDEX FK_PREGUNTA (id_pregunta), /*El INDEX se crea automáticamente en las FK pero compensa definirlo para elegir el nombre (es INDEX porue la relación es n:n, si fuera 1:n prodría ser UNIQUE)*/
+    FOREIGN KEY (id_respuesta) REFERENCES respuestas(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    INDEX FK_RESPUESTA (id_respuesta)
 );
 
+/* No hacen falta porque UNIQUE ya crea un índice
 CREATE INDEX idx_cadena_pregunta ON preguntas (cadena);
 CREATE INDEX idx_cadena_respuesta ON respuestas (cadena);
+*/
 
 /*Triggers, Functions y Procedures*/
 SET @using_insert_procedure = FALSE;
@@ -45,10 +49,15 @@ CREATE TRIGGER block_respuestas_insert BEFORE INSERT ON respuestas
 			END IF;
 		END $$
         
-CREATE TRIGGER after_delete_pregunta AFTER DELETE ON preguntas
+CREATE TRIGGER after_delete_pregunta BEFORE DELETE ON preguntas
 	FOR EACH ROW
 		BEGIN
 			SET @using_delete_trigger = TRUE;
+            SET @count = 0;
+            SELECT COUNT(*) FROM preguntas_respuestas WHERE id_pregunta = OLD.id INTO count;
+            IF @count = 1
+				DELETE respuestas FROM respuestas WHERE 
+            END IF;
 			DELETE respuestas FROM respuestas
 				LEFT JOIN preguntas_respuestas ON preguntas_respuestas.id_respuesta = respuestas.id
 					WHERE preguntas_respuestas.id_pregunta IS NULL;
@@ -65,15 +74,15 @@ CREATE TRIGGER block_respuestas_delete BEFORE DELETE ON respuestas
     
 CREATE FUNCTION get_pregunta_id(pregunta VARCHAR(255)) RETURNS INT DETERMINISTIC
 	BEGIN
-		DECLARE id_pregunta INT DEFAULT -1;
-        SELECT COALESCE(id, -1) INTO id_pregunta FROM preguntas WHERE cadena = pregunta;
+		DECLARE id_pregunta INT DEFAULT 0;
+        SELECT COALESCE(id, 0) INTO id_pregunta FROM preguntas WHERE cadena = pregunta;
         RETURN id_pregunta;
     END $$
     
 CREATE FUNCTION get_respuesta_id(respuesta VARCHAR(255)) RETURNS INT DETERMINISTIC
 	BEGIN
-		DECLARE id_respuesta INT DEFAULT -1;
-        SELECT COALESCE(id, -1) INTO id_respuesta FROM respuestas WHERE cadena = respuesta;
+		DECLARE id_respuesta INT DEFAULT 0;
+        SELECT COALESCE(id, 0) INTO id_respuesta FROM respuestas WHERE cadena = respuesta;
         RETURN id_respuesta;
     END $$
     
@@ -83,14 +92,14 @@ CREATE PROCEDURE insert_pregunta_respuesta(IN pregunta VARCHAR(255), IN respuest
         DECLARE last_respuesta_id INT;
         SET @using_insert_procedure = TRUE;
         
-        IF(get_pregunta_id(pregunta) = -1) THEN
+        IF(get_pregunta_id(pregunta) = 0) THEN
 			INSERT INTO preguntas (cadena) VALUES (pregunta);
 			SET last_pregunta_id = LAST_INSERT_ID();
 		ELSE
 			SET last_pregunta_id = get_pregunta_id(pregunta);
 		END IF;
         
-        IF(get_respuesta_id(respuesta) = -1) THEN
+        IF(get_respuesta_id(respuesta) = 0) THEN
 			INSERT INTO respuestas (cadena) VALUES (respuesta);
 			SET last_respuesta_id = LAST_INSERT_ID();
 		ELSE
