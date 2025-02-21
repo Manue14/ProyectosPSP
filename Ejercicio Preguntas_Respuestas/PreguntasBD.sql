@@ -144,6 +144,11 @@ CREATE PROCEDURE insert_pregunta_respuesta(IN pregunta VARCHAR(255), IN respuest
 			BEGIN
 				-- Do nothing
             END;
+            
+		IF pregunta IS NULL OR respuesta IS NULL THEN
+			SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Ni la cadena ni la respuesta pueden ser nulas al insertar';
+		END IF;
+        
         SET @using_insert_procedure = TRUE;
         
         SET target_pregunta_id = get_pregunta_id(pregunta);
@@ -178,3 +183,5 @@ SELECT * FROM respuestas;
 SELECT * FROM preguntas_respuestas;
 
 /*SET SQL_SAFE_UPDATES=0;*/
+
+CALL insert_pregunta_respuesta(NULL, NULL);
