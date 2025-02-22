@@ -1,11 +1,13 @@
 package utils;
 
+import service.DisconnectedClientException;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.Optional;
 
 public class Utils {
-    public static Optional<String> readMessage(BufferedReader br) {
+    public static Optional<String> readMessage(BufferedReader br) throws DisconnectedClientException {
         try {
             String mensaje = "";
             char[] buffer = new char[1];
@@ -13,6 +15,9 @@ public class Utils {
 
             while (charInteger != -1 && buffer[0] != '\n') {
                 charInteger = br.read(buffer);
+                if (buffer[0] == Character.MIN_VALUE) {
+                    throw new DisconnectedClientException("Cliente desconectado");
+                }
                 if (charInteger != -1 && buffer[0] != '\n')
                     mensaje = mensaje + buffer[0];
             }

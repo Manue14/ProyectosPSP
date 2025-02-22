@@ -1,10 +1,11 @@
 import java.io.*;
+import java.net.ConnectException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.util.Scanner;
 
 public class Cliente {
-    private static final String EXIT_STRING = "Adios";
+    private static final String EXIT_STRING = "SALIR";
     public static void main(String[] args) {
         try {
             Socket clientSocket = new Socket();
@@ -24,12 +25,15 @@ public class Cliente {
                 pregunta = sc.nextLine();
                 pw.println(pregunta);
                 respuesta = br.readLine();
-                System.out.println(respuesta.replace("-[]-", "\n"));
+                if (respuesta == null) {
+                    throw new ConnectException();
+                }
+                System.out.println(respuesta);
             } while (pregunta.compareTo(EXIT_STRING) != 0);
 
             clientSocket.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Servidor desconectado: " + e.getMessage());
         }
 
     }
