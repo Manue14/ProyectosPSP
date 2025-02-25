@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="91c59b9a-2044-4cba-8943-d747503fc650" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Ejercicio Preguntas_Respuestas.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/src/main/java/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/src/main/java/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/src/main/java/service/DatabaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/src/main/java/service/DatabaseManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Servidor/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Servidor/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/.idea/Ejercicio_AdivinarNumero.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/src/main/java/Cliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/src/main/java/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/PlayerThread.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/Servidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,25 +27,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2tP8iSAL1RZuQrdPpGjlfbLK0gM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/manu/EjerciciosPSP/Ejercicio Preguntas_Respuestas/Servidor",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manu/Escritorio/proyectoud4-skill-tree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,6 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1740242476620</updated>
       <workItem from="1740242478142" duration="14000" />
+      <workItem from="1740303796991" duration="1649000" />
+      <workItem from="1740320616189" duration="624000" />
+      <workItem from="1740326626148" duration="54000" />
     </task>
     <servers />
   </component>
