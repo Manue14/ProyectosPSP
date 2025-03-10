@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91c59b9a-2044-4cba-8943-d747503fc650" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/.idea/Ejercicio_AdivinarNumero.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/src/main/java/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Cliente/src/main/java/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/PlayerThread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ejercicio_AdivinarNumero/Servidor/src/main/java/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="91c59b9a-2044-4cba-8943-d747503fc650" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,20 +22,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/manu/Escritorio/proyectoud4-skill-tree&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/manu/EjerciciosPSP/Actividad3_10Servidor",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,6 +56,7 @@
       <workItem from="1740303796991" duration="1649000" />
       <workItem from="1740320616189" duration="624000" />
       <workItem from="1740326626148" duration="54000" />
+      <workItem from="1741624089023" duration="47000" />
     </task>
     <servers />
   </component>
